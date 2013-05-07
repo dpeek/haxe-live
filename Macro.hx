@@ -28,9 +28,10 @@ class Macro
 			}
 		}
 
-		var liveExpr = macro new Live();
-		var live = {name:"live", pos:Context.currentPos(), meta:[], doc:null, access:[AStatic], kind:FVar(null, liveExpr)};
-		fields.push(live);
+		// static init causes issues with nme
+		// var liveExpr = macro new Live();
+		// var live = {name:"live", pos:Context.currentPos(), meta:[], doc:null, access:[AStatic], kind:FVar(null, liveExpr)};
+		// fields.push(live);
 
 		var script = "{"+methods.join(",")+"}";
 		sys.io.File.saveContent("bin/script.hs", script);

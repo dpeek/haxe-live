@@ -1,12 +1,15 @@
 @:build(Macro.build())
 class Main
 {
+	static var live:Live;
 	static function main() new Main();
 
 	var sprite:flash.display.Sprite;
 
 	function new()
 	{
+		live = new Live();
+		
 		flash.Lib.current.stage.frameRate = 60;
 		flash.Lib.current.stage.scaleMode = flash.display.StageScaleMode.NO_SCALE;
 
