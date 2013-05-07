@@ -1,0 +1,4 @@
+-swf main.swf
+-main Main
+-lib hscript
+--no-output

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+	
+	<meta title="hxlive" package="com.dpeek.hxlive" version="1.0.0" company="dpeek" />
+	<app main="Main" path="bin" file="Main" />
+	
+	<haxedef name="HXCPP_DEBUG_LINK" />
+	<haxedef name="DHXCPP_STACK_TRACE" />
+	<haxedef name="HXCPP_STACK_LINE" />
+	<haxedef name="HXCPP_CHECK_POINTER" />
+	<haxedef name="HXCPP_DEBUGGER " />
+	
+	<haxelib name="nme" />
+	<haxelib name="hscript" />
+	<assets path="asset" rename="assets" />
+</project>
